@@ -1,4 +1,4 @@
-package phr.org.co.jp.phreeoni.common;
+package phr.org.co.jp.phreeoni.domain.common;
 
 import java.awt.Image
 

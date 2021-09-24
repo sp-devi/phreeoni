@@ -1,4 +1,4 @@
-package phr.org.co.jp.phreeoni.recognizer
+package phr.org.co.jp.phreeoni.domain.recognizer
 
 import net.sourceforge.tess4j.*;
 import java.io.File
