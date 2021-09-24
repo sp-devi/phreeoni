@@ -1,7 +1,6 @@
 package phr.org.co.jp.phreeoni.domain.common;
 
-import java.awt.Image
+import java.io.File
 
-data class UnitImage(val id: Int, val image: Image, val coordinate: Coordinate) {
-
+data class UnitImage(val id: Int, val imagePath: File, val coordinate: Coordinate) {
 }
