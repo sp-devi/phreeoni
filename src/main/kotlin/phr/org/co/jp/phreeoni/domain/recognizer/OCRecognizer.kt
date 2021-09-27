@@ -6,7 +6,7 @@ import java.io.File
 
 class OCRecognizer(private val imageFile: File) {
 
-    fun processImageFile() {
+    fun processImageFileDemo() {
         try {
             val tesseract = Tesseract();
             tesseract.setDatapath("/usr/share/tessdata")
