@@ -23,4 +23,8 @@ class OCRecognizer(private val imageFile: File) {
         return Coordinate(-1f, -1f)
     }
 
+    fun getAllRecognizedText(imageFile: File): String {
+        return ""
+    }
+
 }
