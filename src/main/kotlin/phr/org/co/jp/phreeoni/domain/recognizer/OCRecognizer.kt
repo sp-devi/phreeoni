@@ -21,10 +21,11 @@ class OCRecognizer(private val imageFile: File) {
 
     fun parseBoundingBoxFromOCR(ocrResult: String): Coordinate {
         return Coordinate(-1f, -1f)
+
     }
 
     fun getAllRecognizedText(imageFile: File): String {
-        return ""
+        return "x"
     }
 
 }
