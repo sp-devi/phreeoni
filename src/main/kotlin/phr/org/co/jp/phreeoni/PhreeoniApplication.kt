@@ -1,8 +1,7 @@
 package phr.org.co.jp.phreeoni
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
-import phr.org.co.jp.phreeoni.domain.recognizer.OCRecognizer
+import phr.org.co.jp.phreeoni.domain.ocr.OCRecognizer
 import java.io.File
 
 @SpringBootApplication

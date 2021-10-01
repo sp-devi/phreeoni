@@ -1,4 +1,4 @@
-package phr.org.co.jp.phreeoni.domain.recognizer
+package phr.org.co.jp.phreeoni.domain.ocr
 
 import net.sourceforge.tess4j.*;
 import phr.org.co.jp.phreeoni.domain.common.Coordinate
@@ -21,7 +21,6 @@ class OCRecognizer(private val imageFile: File) {
 
     fun parseBoundingBoxFromOCR(ocrResult: String): Coordinate {
         return Coordinate(-1f, -1f)
-
     }
 
     fun getAllRecognizedText(imageFile: File): String {
