@@ -12,5 +12,5 @@ fun main(args: Array<String>) {
     println("Starting image ocr...")
     var imageFile = File("/home/spdevi/Pictures/conan_ocr_sample_1.png")
     var ocrController = OCRecognizer(imageFile)
-    ocrController.processImageFile()
+    ocrController.processImageFileDemo()
 }
