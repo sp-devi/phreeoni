@@ -28,6 +28,7 @@ class OCRecognizer(private val imageFile: File) {
             return tesseract.doOCR(imageFile)
         } catch (e: Exception) {
             println(e)
+            return ""
         }
     }
 
