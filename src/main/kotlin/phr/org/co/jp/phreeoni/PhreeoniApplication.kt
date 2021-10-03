@@ -10,7 +10,7 @@ class PhreeoniApplication
 fun main(args: Array<String>) {
    //  runApplication<PhreeoniApplication>(*args)
     println("Starting image ocr...")
-    var imageFile = File("/home/spdevi/Pictures/conan_ocr_sample_1.png")
+    var imageFile = File("/home/spdevi/Pictures/Screenshot_20210910_115900.png")
     var ocrController = OCRecognizer(imageFile)
     ocrController.processImageFileDemo()
 }
