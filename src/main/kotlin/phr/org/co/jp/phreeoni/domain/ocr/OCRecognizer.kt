@@ -19,7 +19,7 @@ class OCRecognizer(private val imageFile: File) {
         }
     }
 
-    fun readImageFile(): String {
+    fun readImageFile(imageFile: File): String {
         try {
             val tesseract = Tesseract();
             tesseract.setDatapath("/usr/share/tessdata")
