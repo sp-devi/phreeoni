@@ -7,16 +7,7 @@ import java.io.File
 class OCRecognizer(private val imageFile: File) {
 
     fun processImageFileDemo() {
-        try {
-            val tesseract = Tesseract();
-            tesseract.setDatapath("/usr/share/tessdata")
-            tesseract.setLanguage("jpn")
-            tesseract.setHocr(true)
-            val result = tesseract.doOCR(imageFile)
-            println(result)
-        } catch (e: Exception) {
-            println(e)
-        }
+        readImageFile(imageFile)
     }
 
     fun readImageFile(imageFile: File): String {
