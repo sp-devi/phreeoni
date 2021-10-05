@@ -28,7 +28,7 @@ class OCRecognizer(private val imageFile: File) {
     }
 
     fun getAllRecognizedText(imageFile: File): String {
-        var treal = readImageFile(imageFile)
+        var treatedResult = readImageFile(imageFile)
         return ""
     }
 
