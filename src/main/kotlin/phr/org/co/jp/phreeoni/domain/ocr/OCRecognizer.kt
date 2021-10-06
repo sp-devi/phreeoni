@@ -40,4 +40,7 @@ class OCRecognizer(private val imageFile: File) {
         return ""
     }
 
+    fun recognizeTextAt(position: Coordinate, language: String): String {
+        return ""
+    }
 }
