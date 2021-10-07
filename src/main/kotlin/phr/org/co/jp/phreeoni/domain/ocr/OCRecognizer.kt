@@ -40,6 +40,7 @@ class OCRecognizer(private val imageFile: File) {
         return ""
     }
 
+    // Language support should be abstracted one level higher than the domain component
     fun recognizeTextAt(position: Coordinate, language: String): String {
         return ""
     }
