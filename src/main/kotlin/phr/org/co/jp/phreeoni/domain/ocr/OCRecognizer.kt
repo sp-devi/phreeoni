@@ -36,6 +36,7 @@ class OCRecognizer(private val imageFile: File) {
         return mapOf("" to mapOf("" to Coordinate(-1f, -1f)))
     }
 
+    // No language support
     fun recognizeTextAt(position: Coordinate): String {
         return ""
     }
