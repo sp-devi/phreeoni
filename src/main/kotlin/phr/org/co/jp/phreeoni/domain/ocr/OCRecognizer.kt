@@ -27,8 +27,8 @@ class OCRecognizer(private val imageFile: File) {
         return Coordinate(-1f, -1f)
     }
 
-    fun retrieveBoundingBoxBasedOnLevel(xmlString: String, depthLevel: String) {
-
+    fun retrieveBoundingBoxBasedOnLevel(xmlString: String, depthLevel: String): String {
+        return ""
     }
 
     fun getAllRecognizedText(imageFile: File): String {
