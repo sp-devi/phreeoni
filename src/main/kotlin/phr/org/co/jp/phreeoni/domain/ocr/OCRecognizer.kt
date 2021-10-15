@@ -12,11 +12,11 @@ class OCRecognizer(private val imageFile: File) {
 
     fun readImageFile(imageFile: File): String {
         try {
-            val tesseract = Tesseract();
-            tesseract.setDatapath("/usr/share/tessdata")
-            tesseract.setLanguage("jpn")
-            tesseract.setHocr(true)
-            return tesseract.doOCR(imageFile)
+            val ocrTess = Tesseract();
+            ocrTess.setDatapath("/usr/share/tessdata")
+            ocrTess.setLanguage("jpn")
+            ocrTess.setHocr(true)
+            return ocrTess.doOCR(imageFile)
         } catch (e: Exception) {
             println(e)
             return ""
