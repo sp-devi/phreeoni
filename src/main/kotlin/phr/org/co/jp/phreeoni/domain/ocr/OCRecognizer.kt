@@ -19,7 +19,6 @@ class OCRecognizer(private val imageFile: File) {
             ocrTess.doOCR(imageFile)
         } catch (e: Exception) {
             println(e)
-            ""
         }
     }
 
