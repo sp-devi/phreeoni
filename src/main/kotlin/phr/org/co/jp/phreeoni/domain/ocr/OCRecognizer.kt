@@ -19,6 +19,7 @@ class OCRecognizer(private val imageFile: File) {
             ocrTess.doOCR(imageFile)
         } catch (e: Exception) {
             println(e)
+            ""
         }
     }
 
@@ -42,6 +43,10 @@ class OCRecognizer(private val imageFile: File) {
     // No language support
     fun recognizeTextAt(position: Coordinate): String {
         return ""
+    }
+
+    fun getAllBoundingBox(ocrResult: String): Array<Coordinate> {
+        return arrayOf(Coordinate(-1f, -1f))
     }
 
     // Language support should be abstracted one level higher than the domain component
