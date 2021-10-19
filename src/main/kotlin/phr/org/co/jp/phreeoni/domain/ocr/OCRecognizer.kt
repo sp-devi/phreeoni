@@ -2,6 +2,7 @@ package phr.org.co.jp.phreeoni.domain.ocr
 
 import net.sourceforge.tess4j.*;
 import phr.org.co.jp.phreeoni.domain.common.Coordinate
+import phr.org.co.jp.phreeoni.domain.common.UnitImageText
 import java.io.File
 
 class OCRecognizer(private val imageFile: File) {
@@ -35,6 +36,11 @@ class OCRecognizer(private val imageFile: File) {
         var treatedResult = readImageFile(imageFile)
         return ""
     }
+
+    fun getAllOcrResults(imageFile: File): Array<UnitImageText> {
+        return arrayOf(UnitImageText(1, "", Coordinate(-1f, -1f)))
+    }
+
 
     fun getAllRecognizedTextAndPosition(imageFile: File): Map<String, Map<String, Coordinate>> {
         return mapOf("" to mapOf("" to Coordinate(-1f, -1f)))
