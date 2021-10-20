@@ -41,7 +41,6 @@ class OCRecognizer(private val imageFile: File) {
         return arrayOf(UnitImageText(1, "", Coordinate(-1f, -1f)))
     }
 
-
     fun getAllRecognizedTextAndPosition(imageFile: File): Map<String, Map<String, Coordinate>> {
         return mapOf("" to mapOf("" to Coordinate(-1f, -1f)))
     }
