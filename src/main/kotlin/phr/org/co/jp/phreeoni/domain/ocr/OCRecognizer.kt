@@ -37,6 +37,7 @@ class OCRecognizer(private val imageFile: File) {
         return ""
     }
 
+    // TODO: Expand these function
     fun getAllOcrResults(imageFile: File): Array<UnitImageText> {
         return arrayOf(UnitImageText(1, "", Coordinate(-1f, -1f)))
     }
