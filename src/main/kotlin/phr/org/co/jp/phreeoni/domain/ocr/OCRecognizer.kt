@@ -52,6 +52,7 @@ class OCRecognizer(private val imageFile: File) {
     }
 
     fun getAllBoundingBox(ocrResult: String): Array<Coordinate> {
+        var coordinate = parseBoundingBoxFromOCR(ocrResult);
         return arrayOf(Coordinate(-1f, -1f))
     }
 
