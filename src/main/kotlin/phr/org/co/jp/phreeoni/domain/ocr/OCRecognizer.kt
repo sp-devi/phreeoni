@@ -52,8 +52,8 @@ class OCRecognizer(private val imageFile: File) {
     }
 
     fun getAllBoundingBox(ocrResult: String): Array<Coordinate> {
-        var coordinate = parseBoundingBoxFromOCR(ocrResult);
-        return arrayOf(Coordinate(-1f, -1f))
+        val coordinate = parseBoundingBoxFromOCR(ocrResult);
+        return arrayOf(coordinate);
     }
 
     // Language support should be abstracted one level higher than the domain component
