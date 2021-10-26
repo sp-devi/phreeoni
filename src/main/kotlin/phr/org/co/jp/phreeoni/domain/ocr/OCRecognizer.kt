@@ -24,6 +24,7 @@ class OCRecognizer(private val imageFile: File) {
         }
     }
 
+    // TODO: Use Xml Parse for parsing coordinates in OCR result
     fun parseBoundingBoxFromOCR(ocrResult: String): Coordinate {
         return Coordinate(-1f, -1f)
     }
