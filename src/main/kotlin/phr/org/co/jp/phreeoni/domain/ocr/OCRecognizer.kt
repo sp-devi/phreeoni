@@ -1,6 +1,6 @@
 package phr.org.co.jp.phreeoni.domain.ocr
 
-import net.sourceforge.tess4j.*;
+import net.sourceforge.tess4j.*
 import phr.org.co.jp.phreeoni.domain.common.Coordinate
 import phr.org.co.jp.phreeoni.domain.common.UnitImageText
 import java.io.File

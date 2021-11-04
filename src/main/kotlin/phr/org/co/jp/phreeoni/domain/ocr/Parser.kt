@@ -7,7 +7,7 @@ import javax.xml.parsers.SAXParserFactory
 class Parser {
 
     fun getElement() {
-        SAXParser spx = SAXParser()
+        val spf = SAXParserFactory.newInstance()
     }
 
 }
