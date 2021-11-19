@@ -15,7 +15,11 @@ class Parser {
             var currentElement = ""
 
             override fun startElement(uri: String?, localName: String?, qName: String?, attributes: Attributes?) {
-                super.startElement(uri, localName, qName, attributes)
+                
+            }
+
+            override fun endElement(uri: String?, localName: String?, qName: String?) {
+                super.endElement(uri, localName, qName)
             }
         }
     }
