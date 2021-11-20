@@ -15,7 +15,11 @@ class Parser {
             var currentElement = ""
 
             override fun startElement(uri: String?, localName: String?, qName: String?, attributes: Attributes?) {
-                
+                when (qName) {
+                    "div" -> print("div")
+                    "p" -> print("p")
+                    "span" -> print("span")
+                }
             }
 
             override fun endElement(uri: String?, localName: String?, qName: String?) {
